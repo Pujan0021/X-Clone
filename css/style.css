@@ -3,6 +3,7 @@
   margin: 0px;
   box-sizing: border-box;
   background-color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .header {
   display: flex;
@@ -10,14 +11,17 @@
   height: screen;
   gap: 4vw;
   width: 20vw;
-
+  position: sticky;
   align-items: center;
   border-right: 1px solid rgba(255, 255, 255, 0.167);
+  top: 0;
+  z-index: 9999;
 }
-button {
+/* button {
   margin-top: 10px;
-}
+} */
 .icon {
+  /* margin-top: 1.3vh; */
   width: 10vw;
   overflow: hidden;
   border: none;
@@ -26,6 +30,7 @@ button {
   display: flex;
   gap: 5vw;
   padding: 2px;
+  margin-top: 1.2vh;
 }
 .option {
   display: none;
@@ -34,4 +39,32 @@ button {
   font-size: 1.9rem;
   width: 10vw;
   margin-right: 1vw;
+}
+.mainContainer {
+  display: flex;
+  /* justify-content: center; */
+  height: screen;
+}
+
+.forYou {
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  font-weight: bold;
+  gap: 5vw;
+  padding: 0vw 1.2vw 0vw 5vw;
+  /* padding: 2vw; */
+  margin-top: 2vh;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.167);
+}
+.forYouPage {
+  border-bottom: 4px solid rgb(93, 93, 244);
+  border-radius: 1px;
+  padding-bottom: 10px;
+}
+.scrollableItems {
+  overflow-x: scroll;
+  opacity: 0.3;
 }
